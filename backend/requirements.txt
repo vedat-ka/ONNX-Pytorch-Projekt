@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+scikit-learn
+matplotlib
+torch
+torch-directml
+onnx
+onnxscript
+onnxruntime
+requests

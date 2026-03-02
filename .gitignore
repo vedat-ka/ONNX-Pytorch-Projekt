@@ -1,0 +1,84 @@
+# -----------------------------
+# OS / Editor
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+.venv/
+.venv311/
+.venv-1/
+venv/
+env/
+ENV/
+
+.coverage
+.coverage.*
+htmlcov/
+
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# -----------------------------
+# Node / Frontend
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+coverage/
+.vite/
+.parcel-cache/
+
+# -----------------------------
+# Android / Gradle
+# -----------------------------
+.gradle/
+local.properties
+captures/
+
+android-app/**/build/
+android-app/.idea/
+
+*.apk
+*.aab
+
+# -----------------------------
+# ML / Runtime Artifacts
+# -----------------------------
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+backend/api/artifacts/
+backend/artifacts/
+backend/uploads/
+backend/reports/
+
+# -----------------------------
+# Logs / temp
+# -----------------------------
+*.log
+*.tmp
+*.temp

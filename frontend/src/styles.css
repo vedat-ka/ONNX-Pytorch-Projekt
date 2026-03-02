@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f9; color: #111; }
+.container { width: calc(100vw - 200px); max-width: none; margin: 0 100px; padding: 24px 0; }
+.card { background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 16px; border: 1px solid #e5e7eb; }
+.row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+label { display: block; font-size: 13px; margin-bottom: 6px; }
+input, select, button, textarea { width: 100%; padding: 10px; border: 1px solid #cfd3d8; border-radius: 8px; }
+button { cursor: pointer; background: #1f6feb; color: #fff; border: none; font-weight: 600; }
+button:disabled { background: #9db8e7; cursor: not-allowed; }
+.actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+.list { max-height: 180px; overflow: auto; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; }
+.list-item { display: flex; gap: 8px; align-items: center; padding: 6px; }
+.badge { display: inline-block; background: #edf4ff; color: #1f4fbf; border-radius: 999px; padding: 4px 10px; font-size: 12px; }
+.mono { font-family: Consolas, monospace; font-size: 12px; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border-bottom: 1px solid #e5e7eb; padding: 8px; text-align: left; font-size: 13px; }
+.steps-list { margin: 0 0 12px 18px; padding: 0; }
+.steps-list li { margin: 4px 0; font-size: 13px; }
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.modal-card {
+  width: min(560px, 100%);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+@media (max-width: 900px) {
+  .container { width: auto; margin: 0; padding: 16px; }
+  .row, .actions { grid-template-columns: 1fr; }
+}
